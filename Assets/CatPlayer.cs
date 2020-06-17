@@ -18,7 +18,7 @@ public class CatPlayer : MonoBehaviour
             transform.position = new Vector3(
                             transform.position.x,
                             transform.position.y,
-                            transform.position.z + 3f * Time.deltaTim);
+                            transform.position.z + 3f * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
@@ -32,15 +32,15 @@ public class CatPlayer : MonoBehaviour
         {
             Debug.Log("오른쪽~");
             transform.position = new Vector3(
-                            transform.position.x, +3f * Time.deltaTime,
+                            transform.position.x +3f * Time.deltaTime,
                             transform.position.y,
-                            transform.position.z
+                            transform.position.z);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             Debug.Log("왼쪽~");
             transform.position = new Vector3(
-                            transform.position.x, -3f * Time.deltaTime,
+                            transform.position.x -3f * Time.deltaTime,
                             transform.position.y,
                             transform.position.z);
 
